@@ -1,0 +1,26 @@
+#NetDevMike
+#Loves Codes
+
+print('N        N     D D D      M               M')
+print('N  N     N     D     D    M M           M M')
+print('N    N   N     D     D    M   M       M   M')
+print('N      N N     D     D    M     M   M     M')
+print('N        N     D D D      M       M       M')
+
+print("      *     *                    ")
+print("                      *          ")
+print("*         *                 *    ")
+print("     *           *     *         ")
+print("           HHHHHHH        *      ")
+print(" *         HHHHHHH               ")
+print("     *   HHHHHHHHHHH    *     *  ")
+print("         *   @ @   *             ")
+print("        *     ^     *            ")
+print("  *       *       *         *    ")
+print("         SSS * * S               ")
+print("         * SSSSSSSS *            ")
+print("       *      O   SS  *          ")
+print("      *       O    S   *         ")
+print("      *       O        *         ")
+print("       *              *          ")
+print("           *   *   *             ")
