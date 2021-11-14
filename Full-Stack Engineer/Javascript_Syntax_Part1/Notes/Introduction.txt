@@ -1,0 +1,13 @@
+Introduction: JavaScript Syntax, Part I
+In this unit, you will be introduced to JavaScript and learn the basics.
+
+JavaScript Syntax, Part I
+Goals of this Unit
+The goal of this unit is to introduce you to JavaScript and get comfortable with the basics of writing JavaScript programs.
+
+After this unit, you will be able to:
+
+Understand how JavaScript is used for web development
+Understand introductory JavaScript syntax
+Practice JavaScript syntax
+Learning is social. Whatever you’re working on, be sure to connect with the Codecademy community in the forums. Remember to check in with the community regularly, including for things like asking for code reviews on your project work and providing code reviews to others in the projects category, which can help to reinforce what you’ve learned.
