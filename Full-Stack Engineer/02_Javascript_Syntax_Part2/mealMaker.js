@@ -1,9 +1,11 @@
 const menu  = {
+    
     _courses: {
       appetizers: [],
       mains: [],
       desserts: [],
     },
+
     get courses () {
       return {
         // return _courses;
@@ -22,7 +24,7 @@ const menu  = {
     get desserts () {
       return this._courses.desserts;
     },
-    
+
     set appetizers(appetizerIn) {
       this._courses.appetizers = appetizerIn;
     },
