@@ -24,11 +24,63 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+const invalidCards = [];
 
+function validateCred(array){
+    console.log('Check this creditcard: ' + array);
+    let creditCard = array.slice(0);
+    let x = creditCard.pop();
+    creditCard.reverse();
+    for (let j=0 ; j < creditCard.length ; (j += 2)){
+        creditCard[j] = creditCard[j] * 2;
+        if (creditCard[j] >= 10){
+            creditCard[j] = creditCard[j] - 9;
+        }
+    }  
+    let sum = (accumulator, currentValue) => accumulator + currentValue;
+    let checkDigit = (creditCard.reduce(sum) + x) % 10;
+    if (checkDigit > 0) {
+        console.log('Credit card is invalid');
+        invalidCards.push(array);
+      } else { 
+        console.log('Credit card is valid');
+        }
+}
 
+for (let i = 0; i < batch.length; i++){
+    validateCred(batch[i]);
+    }
 
+console.log('These are invalid cards: ' + invalidCards);
 
+const companies = [];
 
+function idInvalidCardCompanies(array) {        
+    switch (array[0]){
+        case 3: 
+            if (companies.indexOf('Amex') === -1){
+            companies.push('Amex');}
+        break;
+        case 4:
+            if (companies.indexOf('Visa') === -1){
+            companies.push('Visa');}
+        break;
+        case 5:
+            if (companies.indexOf('Mastercard') === -1){
+            companies.push('Mastercard');}
+        break;
+        case 6:
+            if (companies.indexOf('Discover') === -1){
+            companies.push('Discover');}
+        break;
+        default:
+            console.log('Company not found');
+    }
 
+} 
+       
+for (let y = 0; y < invalidCards.length ; y++) {
+    idInvalidCardCompanies(invalidCards[y]);
+}
 
-
+console.log('These companies have issued invalid creditcards: ' + companies.join(', '));
